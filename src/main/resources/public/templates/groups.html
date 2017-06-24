@@ -1,0 +1,14 @@
+<div class="row">
+    <h1>Groups</h1>
+</div>
+<div data-ng-repeat="group in groups" class="row">
+    <div class="col-md-10 phonebook-list-item">{{group.name}}</div>
+    <div class="col-md-2 phonebook-list-action">
+        <i class="material-icons" data-ng-click="groupModal('edit', group)" uib-tooltip="Edit {{group.name}}">edit</i>
+        <i class="material-icons" data-ng-click="deleteGroup(group.id)" uib-tooltip="Delete {{group.name}}">delete</i>
+    </div>
+</div>
+
+<a href="javascript:void(0)" uib-tooltip="Add new group" class="btn btn-info btn-fab" data-ng-click="groupModal()">
+    <i class="material-icons">group_add</i>
+</a>

@@ -1,0 +1,17 @@
+.DS_Store
+.vscode
+.project
+target
+.settings/
+.classpath
+*.properties
+
+# Gradle files
+.gradle/
+build/
+bin
+
+.idea/
+*.iml
+out
+

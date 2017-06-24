@@ -1,0 +1,359 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Phonebook",
+		"_postman_id": "7b32e33d-73d1-2182-75a6-996320c24bad",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /api/groups",
+			"request": {
+				"url": "http://localhost:4567/api/groups",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Family",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Creates a new Group."
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/groups",
+			"request": {
+				"url": "http://localhost:4567/api/groups",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Work",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Gets all Group."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/groups/2",
+			"request": {
+				"url": "http://localhost:4567/api/groups/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Work",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Updates group 2."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/groups/2",
+			"request": {
+				"url": "http://localhost:4567/api/groups/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Work",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "DELETE group 2."
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/contacts",
+			"request": {
+				"url": "http://localhost:4567/api/contacts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Michael Scott",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "michael@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+11232343456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "groupId[]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Create a contact."
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/contacts",
+			"request": {
+				"url": "http://localhost:4567/api/contacts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Michael Scott",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "michael@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+11232343456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "groupId[]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "GET all contacts."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT  /api/contacts/1",
+			"request": {
+				"url": "http://localhost:4567/api/contacts/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Michael Scott",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "michael@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+11236547656",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "groupId[]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Update contact with id 1."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/contacts/2",
+			"request": {
+				"url": "http://localhost:4567/api/contacts/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Jane",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jane@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+13452343456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "groupId[]",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Delete contact with id 2."
+			},
+			"response": []
+		}
+	]
+}

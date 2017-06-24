@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>All Contacts</h1>
+</div>
+<div data-ng-repeat="contact in contacts">
+    <div class="row">
+        <div class="col-md-10 phonebook-list-item">{{contact.name}}</div>
+        <div class="col-md-2 phonebook-list-action">
+            <i class="material-icons" data-ng-click="contactModal('edit', contact)" uib-tooltip="Edit {{contact.name}}">edit</i>
+            <i class="material-icons" data-ng-click="deleteContact(contact.id)" uib-tooltip="Delete {{contact.name}}">delete</i>
+        </div>
+    </div>
+</div>
+<a href="javascript:void(0)" uib-tooltip="Add new contact" class="btn btn-info btn-fab" data-ng-click="contactModal()">
+    <i class="material-icons">person_add</i>
+</a>

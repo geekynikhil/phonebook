@@ -1,0 +1,40 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title"> {{ modalMode == 'edit' ? 'Edit' : 'Add a new'}} contact</h3>
+  <div uib-alert class="alert alert-warning" data-ng-show="error" data-close="error = false">{{ error }}</div>
+</div>
+<div class="modal-body">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="name" class="col-md-2 control-label">Name</label>
+      <div class="col-md-10">
+        <input type="name" class="form-control" data-ng-model="contact.name" placeholder="Name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-md-2 control-label">Email</label>
+      <div class="col-md-10">
+        <input type="email" class="form-control" data-ng-model="contact.email" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-md-2 control-label">Phone</label>
+      <div class="col-md-10">
+        <input type="phone" class="form-control" data-ng-model="contact.phone" placeholder="Phone" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-md-2 control-label">Groups</label>
+      <div class="col-md-10">
+        <select data-ng-model="contact.groupId" class="form-control" multiple>
+          <option data-ng-value="{{group.id}}" data-ng-repeat="group in groups">
+            {{ group.name }}
+          </option>
+        </select>
+      </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="cancel" class="btn btn-default" data-ng-click="$close()">Cancel</button>
+    <button type="submit" class="btn btn-success" data-ng-click="addContact()">Submit</button>
+  </form>
+</div>

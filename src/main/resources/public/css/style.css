@@ -1,0 +1,23 @@
+
+/* Contacts */
+.phonebook-list-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+}
+.phonebook-list-action {
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-fab {
+    position: fixed !important;
+    bottom: 24px;
+    right: 24px;
+}
+
+.modal-footer {
+    padding-top: 20px !important;
+}
