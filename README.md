@@ -3,6 +3,9 @@
 ## Summary:
 This repository provides full source code of a phonebook web app, allowing CRUD operations on contacts and groups via RESTful API written in Spark Java.
 
+![](screenshots/All%20Contacts.png)
+![](screenshots/Groups.png)
+
 ## Set up:
 ### Requirements:
 - Java 8
