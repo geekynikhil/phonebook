@@ -1,6 +1,6 @@
 # Phonebook 
 
-[![Build Status](https://travis-ci.org/shreelekha/phonebook.svg)](https://travis-ci.org/shreelekha/phonebook)
+![Build Status](https://travis-ci.org/shreelekha/phonebook.svg)
 
 ## Summary:
 This repository provides full source code of a phonebook web app, allowing CRUD operations on contacts and groups via RESTful API written in Spark Java.
